@@ -17,20 +17,20 @@ export const info = {
   baseColor: colors[0],
   miniBio: [
     {
-      emoji: '☕',
-      text: 'fueled by coffee',
+      emoji: '🍜',
+      text: 'Fueled by Pho',
     },
     {
       emoji: '🌎',
-      text: 'based in the US',
+      text: 'Pacific Northwest, USA',
     },
     {
       emoji: '💼',
-      text: 'Systems Engineer at Google',
+      text: 'Looking for Work',
     },
     {
       emoji: '📧',
-      text: 'johnsmith@gmail.com',
+      text: 'troydorman@gmail.com',
     },
   ],
   socials: [
@@ -61,7 +61,7 @@ export const info = {
     },
   ],
   bio:
-    "Hello! I'm John. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+    "Hello! I'm Troy. I'm a full stack developer in search of my next gig. I'm a certified developer thanks to the University of Minnesota. I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
   skills: {
     proficientWith: [
       'javascript',
@@ -97,31 +97,31 @@ export const info = {
     {
       title: 'PalletTest',
       live: 'https://pallettest.com',
-      source: 'https://github.com/paytonjewell',
+      source: 'https://github.com/infiniteoo',
       image: mock1,
     },
     {
       title: 'Report It',
-      live: 'https://paytonpierce.dev',
-      source: 'https://github.com/paytonjewell',
+      live: 'https://',
+      source: 'https://github.com/infiniteoo',
       image: mock2,
     },
     {
-      title: 'Project 3',
-      live: 'https://paytonpierce.dev',
-      source: 'https://github.com/paytonjewell',
+      title: 'PowerDing',
+      live: 'https://',
+      source: 'https://github.com/infiniteoo',
       image: mock3,
     },
     {
-      title: 'Project 4',
-      live: 'https://paytonpierce.dev',
-      source: 'https://github.com/paytonjewell',
+      title: 'PalletPlaques',
+      live: 'https://',
+      source: 'https://github.com/infiniteoo',
       image: mock4,
     },
     {
-      title: 'Project 5',
-      live: 'https://paytonpierce.dev',
-      source: 'https://github.com/paytonjewell',
+      title: 'Timeline Monitor',
+      live: 'https://www.linemon.com',
+      source: 'https://github.com/infiniteoo',
       image: mock5,
     },
   ],
