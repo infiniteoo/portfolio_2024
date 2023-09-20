@@ -61,7 +61,7 @@ export const info = {
     },
   ],
   bio:
-    "Hello! I'm Troy. I'm a certified full-stack developer thanks to the University of Minnesota, and I am in search of my next opportunity. I enjoy listening to trance music and audiobooks, playing Starfield, and I enjoy inventing new technologies that will revolutionize and help the world. You should hire me!",
+    "Hello! I'm Troy. I'm a certified full-stack developer trained at the University of Minnesota, and I am in search of my next opportunity. Currently, I'm primarly engaged in creating automated technologies centered in the logistics, warehousing and production industries. I enjoy coding, listening to EDM, audiobooks, and playing Starfield.  You should hire me!",
   skills: {
     proficientWith: [
       'javascript/css/html',
@@ -69,8 +69,8 @@ export const info = {
       'next.js',
       'node.js/express',
       'tailwindcss',
-      'aws',
-      'linux administration',
+      'aws/cloud',
+      'linux admin/nginx',
       'react-native',
       '',
     ],
@@ -114,7 +114,7 @@ export const info = {
       image: mock3,
     },
     {
-      title: 'PalletPlaques',
+      title: 'Portfolio 2024',
       live: 'https://',
       source: 'https://github.com/infiniteoo',
       image: mock4,
