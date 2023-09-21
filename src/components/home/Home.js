@@ -6,6 +6,7 @@ import EmojiBullet from './EmojiBullet'
 import SocialIcon from './SocialIcon'
 import { Box } from '@mui/material'
 import { info } from '../../info/Info'
+import ConfettiComponent from '../confetti/ConfettiComponent'
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
       minHeight={'calc(100vh - 175px)'}
     >
       <Box
-        className={classNames(Style.avatar, Style.shadowed)}
+        className={classNames((Style.avatar, Style.shadowed))}
         alt={'image of developer'}
-        style={{ background: info.gradient }}
+        style={{ background: info.gradient, zIndex: 10 }}
         component={'img'}
         src={me}
         width={{ xs: '35vh', md: '40vh' }}
@@ -32,17 +33,15 @@ export default function Home() {
       />
       <Box>
         <h1>
-          Hi, I'm{' '}
+          Hi, I'm {info.firstName}
           <span
             style={{
               background: info.gradient,
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
             }}
-          >
-            {info.firstName}
-          </span>
-          <span className={Style.hand}>🤚</span>
+          ></span>
+          <span className={Style.hand}>🚀</span>
         </h1>
         <h2>I'm {info.position}.</h2>
         <Box component={'ul'} p={'0.8rem'}>
@@ -66,6 +65,8 @@ export default function Home() {
           ))}
         </Box>
       </Box>
+
+      <ConfettiComponent style={{ zIndex: 0 }} />
     </Box>
   )
 }

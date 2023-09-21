@@ -98,7 +98,7 @@ export const info = {
     {
       title: 'PalletTest',
       live: 'https://pallettest.com',
-      source: 'https://github.com/infiniteoo',
+      source: 'https://www.pallettest.com',
       image: mock1,
     },
     {
