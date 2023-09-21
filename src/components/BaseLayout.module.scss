@@ -23,10 +23,21 @@ footer {
   footer {
     color: $white;
   }
+
+  background-image: url('../img/bg-dark.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .light {
   background-color: $white;
   color: $dark;
   transition: all 400ms;
+  background-image: url('../img/bg-light.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
