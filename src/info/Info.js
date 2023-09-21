@@ -21,7 +21,7 @@ export const info = {
       text: 'Fueled by Pho',
     },
     {
-      emoji: '🌎',
+      emoji: '🌳',
       text: 'Pacific Northwest, USA',
     },
     {
