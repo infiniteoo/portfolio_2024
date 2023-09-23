@@ -63,7 +63,7 @@ const ParticleAcellerator = () => {
         interactivity: {
           events: {
             onHover: {
-              enable: true,
+              enable: false,
               mode: "grab",
             },
           },

@@ -6,7 +6,6 @@ import EmojiBullet from './EmojiBullet'
 import SocialIcon from './SocialIcon'
 import { Box } from '@mui/material'
 import { info } from '../../info/Info'
-import ConfettiComponent from '../confetti/ConfettiComponent'
 import ThreeDBoxes from '../3d/ThreeDBoxes'
 import ParticleAcellerator from '../ParticleAccellerator'
 
@@ -86,7 +85,7 @@ export default function Home() {
         <Box
           style={{
             width: '100%',
-            height: '50vh',
+            height: '40vh',
             position: 'relative',
             zIndex: '5',
           }}

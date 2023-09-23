@@ -20,8 +20,7 @@ function Box(props) {
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}
     >
-      <boxGeometry args={[1, 1, 1]} />{" "}
-      {/* Reduced geometry size to 50% of the original */}
+      <boxGeometry args={[1, 1, 1]} />
       <meshPhysicalMaterial
         color={props.color}
         clearcoat={1}
@@ -40,8 +39,7 @@ const ThreeDBoxes = () => {
       <ambientLight intensity={1.2} />
       <pointLight position={[10, 10, 10]} intensity={1.5} />
       <directionalLight position={[-5, 5, 5]} intensity={0.5} />
-      <Box position={[-4, 0, 0]} color="rgb(20, 146, 255)" />{" "}
-      {/* Adjusted positions */}
+      <Box position={[-4, 0, 0]} color="rgb(20, 146, 255)" />
       <Box position={[0, 0, 0]} color="rgb(255, 134, 20)" />
       <Box position={[4, 0, 0]} color="rgb(20, 146, 255)" />
     </Canvas>
