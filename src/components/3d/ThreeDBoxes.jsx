@@ -2,25 +2,34 @@ import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 
 function Box(props) {
-  // This reference gives us direct access to the THREE.Mesh object
   const ref = useRef();
-  // Hold state for hovered and clicked events
   const [hovered, hover] = useState(false);
   const [clicked, click] = useState(false);
-  // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.x += delta));
-  // Return the view, these are regular Threejs elements expressed in JSX
+
+  useFrame((state, delta) => {
+    ref.current.rotation.x += delta;
+    ref.current.rotation.y += delta;
+  });
+
   return (
     <mesh
       {...props}
       ref={ref}
-      scale={clicked ? 1.5 : 1}
+      scale={hovered ? [1.25, 1.25, 1.25] : [1, 1, 1]}
       onClick={(event) => click(!clicked)}
       onPointerOver={(event) => hover(true)}
       onPointerOut={(event) => hover(false)}
     >
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={hovered ? "orange" : "teal"} />
+      <boxGeometry args={[1, 1, 1]} />{" "}
+      {/* Reduced geometry size to 50% of the original */}
+      <meshPhysicalMaterial
+        color={props.color}
+        clearcoat={1}
+        clearcoatRoughness={0}
+        metalness={0.5}
+        roughness={0.2}
+        reflectivity={1}
+      />
     </mesh>
   );
 }
@@ -28,10 +37,13 @@ function Box(props) {
 const ThreeDBoxes = () => {
   return (
     <Canvas>
-      <ambientLight />
-      <pointLight position={[10, 10, 10]} />
-      <Box position={[-1.2, 0, 0]} />
-      <Box position={[1.2, 0, 0]} />
+      <ambientLight intensity={1.2} />
+      <pointLight position={[10, 10, 10]} intensity={1.5} />
+      <directionalLight position={[-5, 5, 5]} intensity={0.5} />
+      <Box position={[-4, 0, 0]} color="rgb(20, 146, 255)" />{" "}
+      {/* Adjusted positions */}
+      <Box position={[0, 0, 0]} color="rgb(255, 134, 20)" />
+      <Box position={[4, 0, 0]} color="rgb(20, 146, 255)" />
     </Canvas>
   );
 };
