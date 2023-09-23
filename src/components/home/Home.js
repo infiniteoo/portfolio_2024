@@ -8,6 +8,7 @@ import { Box } from '@mui/material'
 import { info } from '../../info/Info'
 import ConfettiComponent from '../confetti/ConfettiComponent'
 import ThreeDBoxes from '../3d/ThreeDBoxes'
+import ParticleAcellerator from '../ParticleAccellerator'
 
 export default function Home() {
   return (
@@ -19,8 +20,17 @@ export default function Home() {
         alignItems={'center'}
         justifyContent={'center'}
         minHeight={'calc(100vh - 175px)'}
+        style={{ position: 'relative', zIndex: '1' }}
       >
-        <div id="leftright" style={{ display: 'flex', flexDirection: 'row' }}>
+        <div
+          id="leftright"
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            position: 'relative',
+            zIndex: '5',
+          }}
+        >
           <div id={'left side'}>
             <Box
               className={classNames((Style.avatar, Style.shadowed))}
@@ -76,8 +86,9 @@ export default function Home() {
         <Box>
           <ThreeDBoxes />
         </Box>
-
-        <ConfettiComponent style={{ zIndex: 0 }} />
+        <div style={{ position: 'relative', zIndex: '0' }}>
+          <ParticleAcellerator />
+        </div>
       </Box>
     </>
   )
