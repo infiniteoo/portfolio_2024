@@ -82,7 +82,7 @@ export default function Home() {
             </Box>
           </div>
         </div>
-        <Box
+        {/*  <Box
           style={{
             width: '100%',
             height: '40vh',
@@ -91,7 +91,7 @@ export default function Home() {
           }}
         >
           <ThreeDBoxes />
-        </Box>
+        </Box> */}
         <div style={{ position: 'fixed', zIndex: '0' }}>
           <ParticleAcellerator />
         </div>
